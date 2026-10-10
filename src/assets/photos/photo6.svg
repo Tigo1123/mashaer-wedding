@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D1A30" />
+      <stop offset="50%" stop-color="#221226" />
+      <stop offset="100%" stop-color="#140917" />
+    </linearGradient>
+    <linearGradient id="gold6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2CE" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#9C6B16" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg6)" />
+  <rect x="30" y="30" width="740" height="540" rx="16" fill="none" stroke="url(#gold6)" stroke-width="2" stroke-dasharray="8 6" opacity="0.6" />
+  <rect x="45" y="45" width="710" height="510" rx="12" fill="none" stroke="url(#gold6)" stroke-width="1" opacity="0.3" />
+
+  <!-- Doves / Flying Peace -->
+  <g transform="translate(400, 230)">
+    <circle cx="0" cy="0" r="80" fill="rgba(255, 248, 240, 0.08)" />
+    <!-- Dove 1 -->
+    <path d="M-50,10 C-30,-20 -10,-10 0,0 C-10,15 -35,25 -50,10 Z" fill="#FFF8F0" opacity="0.9" />
+    <path d="M-30,-5 C-25,-35 -5,-25 0,0 Z" fill="#FFF8F0" opacity="0.8" />
+    <!-- Dove 2 -->
+    <path d="M50,10 C30,-20 10,-10 0,0 C10,15 35,25 50,10 Z" fill="#FFF8F0" opacity="0.9" />
+    <path d="M30,-5 C25,-35 5,-25 0,0 Z" fill="#FFF8F0" opacity="0.8" />
+    <!-- Olive branch in middle -->
+    <path d="M0,0 Q0,35 15,45" fill="none" stroke="url(#gold6)" stroke-width="2" />
+    <ellipse cx="6" cy="18" rx="7" ry="3" transform="rotate(-30 6 18)" fill="url(#gold6)" opacity="0.9" />
+    <ellipse cx="-4" cy="28" rx="7" ry="3" transform="rotate(30 -4 28)" fill="url(#gold6)" opacity="0.9" />
+  </g>
+
+  <text x="400" y="420" font-family="'Cairo', sans-serif" font-size="34" font-weight="bold" fill="url(#gold6)" text-anchor="middle">
+    حياة عامرة بالحب والسكينة 🕊️💍
+  </text>
+  <text x="400" y="465" font-family="'Cairo', sans-serif" font-size="20" fill="#FFF8F0" opacity="0.8" text-anchor="middle">
+    عسى كل خطوة في دربكما تملأها الرحمة والتوفيق
+  </text>
+  <text x="400" y="515" font-family="'Cairo', sans-serif" font-size="14" fill="#D4AF37" opacity="0.6" text-anchor="middle">
+    (صورة توضيحية - يمكنك استبدالها بصورة حقيقية)
+  </text>
+</svg>

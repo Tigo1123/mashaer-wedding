@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D233D" />
+      <stop offset="50%" stop-color="#2B1B2E" />
+      <stop offset="100%" stop-color="#1A101C" />
+    </linearGradient>
+    <linearGradient id="gold1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE0AD" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA771C" />
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#2B1B2E" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg1)" />
+  <circle cx="400" cy="300" r="260" fill="url(#glow1)" />
+  <rect x="30" y="30" width="740" height="540" rx="16" fill="none" stroke="url(#gold1)" stroke-width="2" stroke-dasharray="8 6" opacity="0.6" />
+  <rect x="45" y="45" width="710" height="510" rx="12" fill="none" stroke="url(#gold1)" stroke-width="1" opacity="0.3" />
+  
+  <!-- Bridal Silhouette / Tiara Icon -->
+  <g transform="translate(400, 240)" filter="url(#shadow1)">
+    <circle cx="0" cy="-20" r="65" fill="#F4C2C2" opacity="0.15" />
+    <path d="M-60,30 C-40,-50 40,-50 60,30 Z" fill="none" stroke="url(#gold1)" stroke-width="3" />
+    <polygon points="0,-75 -25,-40 -15,-40 -40,-20 0,-30 40,-20 15,-40 25,-40" fill="url(#gold1)" />
+    <circle cx="0" cy="-80" r="5" fill="#FFF8F0" />
+    <circle cx="-42" cy="-20" r="4" fill="#FFF8F0" />
+    <circle cx="42" cy="-20" r="4" fill="#FFF8F0" />
+    <path d="M-80,80 Q0,40 80,80" fill="none" stroke="url(#gold1)" stroke-width="2" opacity="0.7" />
+  </g>
+  
+  <text x="400" y="420" font-family="'Cairo', sans-serif" font-size="34" font-weight="bold" fill="url(#gold1)" text-anchor="middle">
+    عروس النور والجمال 👰🏻‍♀️✨
+  </text>
+  <text x="400" y="465" font-family="'Cairo', sans-serif" font-size="20" fill="#FFF8F0" opacity="0.8" text-anchor="middle">
+    أجمل عروس زفّتها قلوبنا بالحب والدعوات
+  </text>
+  <text x="400" y="515" font-family="'Cairo', sans-serif" font-size="14" fill="#D4AF37" opacity="0.6" text-anchor="middle">
+    (صورة توضيحية - يمكنك استبدالها بصورة حقيقية)
+  </text>
+</svg>

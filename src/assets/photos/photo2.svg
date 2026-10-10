@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D1C30" />
+      <stop offset="50%" stop-color="#221425" />
+      <stop offset="100%" stop-color="#150C17" />
+    </linearGradient>
+    <linearGradient id="gold2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2CC" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#996515" />
+    </linearGradient>
+    <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F4C2C2" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#2B1B2E" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg2)" />
+  <circle cx="400" cy="270" r="230" fill="url(#ringGlow)" />
+  <rect x="30" y="30" width="740" height="540" rx="16" fill="none" stroke="url(#gold2)" stroke-width="2" stroke-dasharray="8 6" opacity="0.6" />
+  <rect x="45" y="45" width="710" height="510" rx="12" fill="none" stroke="url(#gold2)" stroke-width="1" opacity="0.3" />
+
+  <!-- Twin Interlocked Rings -->
+  <g transform="translate(400, 240)">
+    <!-- First Ring -->
+    <ellipse cx="-45" cy="0" rx="65" ry="65" fill="none" stroke="url(#gold2)" stroke-width="14" />
+    <ellipse cx="-45" cy="0" rx="65" ry="65" fill="none" stroke="#FFF" stroke-width="2" opacity="0.4" />
+    
+    <!-- Second Ring -->
+    <ellipse cx="45" cy="0" rx="65" ry="65" fill="none" stroke="url(#gold2)" stroke-width="14" />
+    <ellipse cx="45" cy="0" rx="65" ry="65" fill="none" stroke="#FFF" stroke-width="2" opacity="0.4" />
+    
+    <!-- Solitaire Diamond on Ring -->
+    <polygon points="-45,-76 -60,-65 -45,-54 -30,-65" fill="#FFFFFF" />
+    <polygon points="-45,-76 -60,-65 -30,-65" fill="#E0F7FA" opacity="0.9" />
+    <circle cx="-45" cy="-65" r="3" fill="#FFF" />
+    <path d="M-45,-90 L-45,-78 M-57,-65 L-69,-65 M-33,-65 L-21,-65" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <text x="400" y="420" font-family="'Cairo', sans-serif" font-size="34" font-weight="bold" fill="url(#gold2)" text-anchor="middle">
+    رباط المحبة وعهد العمر 💍✨
+  </text>
+  <text x="400" y="465" font-family="'Cairo', sans-serif" font-size="20" fill="#FFF8F0" opacity="0.8" text-anchor="middle">
+    خطوة أولى نحو حياة ملؤها السعادة والسكينة
+  </text>
+  <text x="400" y="515" font-family="'Cairo', sans-serif" font-size="14" fill="#D4AF37" opacity="0.6" text-anchor="middle">
+    (صورة توضيحية - يمكنك استبدالها بصورة حقيقية)
+  </text>
+</svg>
