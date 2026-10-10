@@ -1,12 +1,12 @@
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { musicSynth } from '../utils/audioSynthesizer'
+import { weddingData } from '../data'
 
 export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [showTooltip, setShowTooltip] = useState(true)
   const audioRef = useRef(null)
-  const [hasCustomAudio, setHasCustomAudio] = useState(false)
 
   // إخفاء التلميح تلقائياً بعد 6 ثوانٍ
   useEffect(() => {
@@ -16,36 +16,39 @@ export default function MusicPlayer() {
     return () => clearTimeout(timer)
   }, [])
 
-  const toggleMusic = () => {
+  const toggleMusic = async () => {
     if (isPlaying) {
-      if (hasCustomAudio && audioRef.current) {
+      if (audioRef.current) {
         audioRef.current.pause()
-      } else {
-        musicSynth.stop()
       }
+      musicSynth.stop()
       setIsPlaying(false)
     } else {
-      if (hasCustomAudio && audioRef.current) {
-        audioRef.current.play().catch(() => {
-          // في حال فشل تشغيل الملف المخصص، نستخدم المولد الصوتي
-          musicSynth.start()
-        })
-      } else {
-        musicSynth.start()
-      }
-      setIsPlaying(true)
       setShowTooltip(false)
+      if (audioRef.current) {
+        try {
+          await audioRef.current.play()
+          setIsPlaying(true)
+          return
+        } catch (err) {
+          console.warn('Custom audio playback failed, falling back to synthesizer:', err)
+        }
+      }
+      musicSynth.start()
+      setIsPlaying(true)
     }
   }
 
   return (
     <div style={{ position: 'fixed', top: '24px', left: '24px', zIndex: 1000 }}>
-      {/* مشغل صوت مخفي في حال أراد المستخدم وضع ملف mp3 حقيقي */}
+      {/* مشغل الصوت */}
       <audio
         ref={audioRef}
-        src="/wedding-music.mp3"
+        src={weddingData.music?.src || "/wedding-music.mp3"}
         loop
-        onCanPlayThrough={() => setHasCustomAudio(true)}
+        preload="auto"
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
       />
 
       <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -67,7 +70,7 @@ export default function MusicPlayer() {
                 pointerEvents: 'none'
               }}
             >
-              موسيقى هادئة اختيارية 🎵
+              {weddingData.music?.title || 'موسيقى هادئة 🎵'}
             </motion.div>
           )}
         </AnimatePresence>

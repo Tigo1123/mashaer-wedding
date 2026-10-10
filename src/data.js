@@ -7,6 +7,12 @@ import photo5 from "./assets/photos/photo5.svg";
 import photo6 from "./assets/photos/photo6.svg";
 
 export const weddingData = {
+  // الموسيقى الخلفية
+  music: {
+    title: "Trade Places - Jack Harlow 🎵",
+    src: "/wedding-music.mp3",
+  },
+
   // اسم العروس
   brideName: "مشاعر عبد المنعم 💍",
 
